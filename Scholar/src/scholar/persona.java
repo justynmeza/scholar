@@ -5,6 +5,8 @@
  */
 package scholar;
 
+import java.text.SimpleDateFormat;
+
 /**
  *
  * @author estudiante
@@ -104,5 +106,11 @@ public class persona {
 public void printname(){
     System.out.println(this.nombre+" "+this.apellido);
 }    
-    
+    public String calcEdad(){
+        
+       persona fechaActual = new persona();
+       SimpleDateFormat formato = new  SimpleDateFormat("20/09/2001");
+       String hoy = formato.format(03)
+    }
 }
+
