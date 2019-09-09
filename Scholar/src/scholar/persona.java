@@ -5,16 +5,17 @@
  */
 package scholar;
 
-import java.text.SimpleDateFormat;
 
 /**
  *
  * @author estudiante
  */
 public class persona {
+    
+
     public String nombre;
     public String apellido;
-    public String fecha_nacimiento;
+    public String fecha_nacimiento ;
     public String sangre;
     public String nacionalidad;
     public String identificacion;
@@ -22,6 +23,7 @@ public class persona {
     public String direccion;
     public String correo_electronico;
     public String genero;
+    public int edad;
 
     public String getNombre() {
         return nombre;
@@ -103,14 +105,33 @@ public class persona {
         this.genero = genero;
     }
     
-public void printname(){
-    System.out.println(this.nombre+" "+this.apellido);
-}    
-    public String calcEdad(){
+    public void printname(){
+        System.out.println(this.nombre+" "+this.apellido);
+    } 
+    public int caledad(){
         
-       persona fechaActual = new persona();
-       SimpleDateFormat formato = new  SimpleDateFormat("20/09/2001");
-       String hoy = formato.format(03)
+        int DIA = 20;
+        int MES = 9;
+        int AÑO = 2001;
+        if (2019 > AÑO){
+            int edadA = 2019-AÑO; //edadA: edad anual o adad a cumplir en el año
+            
+            if ( MES >= 9 ){
+                if (DIA >= 20){
+                    edad = edadA;
+                }
+                else{
+                    edad = edadA - 1;
+                }    
+            }
+            else {
+                edad = edadA - 1;
+            }
+        }
+        else{
+            System.out.println("año erroneo");
+        }
+         return edad;
     }
 }
 

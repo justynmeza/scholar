@@ -33,13 +33,12 @@ public class Scholar {
              System.out.println("FECHA DE NACIMIENTO: " + empleado1.fecha_nacimiento);
              System.out.println("GENERO: "+empleado1.genero);
              System.out.println("TIPO DE SANGRE: "+empleado1.sangre);
-             System.out.println("NACIONALIDAD,DIRECCION Y NUMERO DE IDENTIFICACION: "+empleado1.nacionalidad +" / "+empleado1.direccion +" / "+empleado1.identificacion);
+             System.out.println("NACIONALIDAD / DIRECCION / NUMERO DE CEDULA: "+empleado1.nacionalidad +" / "+empleado1.direccion +" / "+empleado1.identificacion);
              System.out.println("CONTACTOS: ");
              System.out.println("    -DIRECCION: "+empleado1.direccion);
              System.out.println("    -CORREO ELECTRONICO: "+empleado1.correo_electronico);
              System.out.println("    -TELEFONO: "+empleado1.telefono);
-             System.out.println(empleado1.calcEdad());
-             
+             System.out.println("EL EMPLEADO TIENE LA EDAD DE: "+empleado1.caledad()+" años");
          System.out.println("--------------------------------------------------------------------------------------");    
          estudiantes estudiante1 = new estudiantes();
              estudiante1.nombre="Justyn ";
@@ -52,7 +51,18 @@ public class Scholar {
              estudiante1.telefono = "3106270817";
              estudiante1.direccion = "Cra78c #82-45";
              estudiante1.correo_electronico = "justinmesa2013@gmail.com";
-            
+             
+                System.out.println("Informacion del estudiante: ");
+                System.out.println("NOMBRE: " +estudiante1.nombre+estudiante1.apellido);
+                System.out.println("FECHA DE NACIMIENTO: "+estudiante1.fecha_nacimiento);
+                System.out.println("GENERO: "+estudiante1.genero);
+                System.out.println("TIPO DE SANGRE: "+estudiante1.sangre);
+                System.out.println("LUGAR DE NACIMIENTO / DIRECCION / TARGETA DE IDENTIDAD "+estudiante1.nacionalidad+"/"+estudiante1.direccion+"/"+estudiante1.identificacion);
+                System.out.println("CONTACTOS:");
+                System.out.println("     -DIRECCION: "+estudiante1.direccion);
+                System.out.println("     -CORREO ELECTRONICO: "+estudiante1.correo_electronico);
+                System.out.println("     -TELEFONO: "+estudiante1.telefono);
+                System.out.println("LA EDAD DEL ESTUDIANTE ES: "+estudiante1.caledad()+" años");
     }
 
 }
