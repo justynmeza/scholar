@@ -19,6 +19,10 @@ public class Scholar {
         v.setVisible(true);
         v.setLocationRelativeTo(null);
         
+        Ventana2 v2 = new Ventana2();
+        v2.setVisible(true);
+        v2.setLocationRelativeTo(null);
+        
         
 //        empleado empleado1 = new empleado();
 //           empleado1.nombre = "Justyn ";
